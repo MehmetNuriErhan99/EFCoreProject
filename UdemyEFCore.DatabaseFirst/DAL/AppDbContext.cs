@@ -11,10 +11,14 @@ namespace UdemyEFCore.DatabaseFirst.DAL
     {
         public DbSet<Product> Products { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("");
-        }
 
+        public AppDbContext()
+        {
+            
+        }
+        public AppDbContext(DbContextOptions<AppDbContext> options): base(options) // Temel sınıfın yapıcısını çağırıyoruz
+        {
+             
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,13 @@ namespace UdemyEFCore.DatabaseFirst.DAL
         public AppDbContext(DbContextOptions<AppDbContext> options): base(options) // Temel sınıfın yapıcısını çağırıyoruz
         {
              
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+
+            optionsBuilder.UseSqlServer(DbContextInitializer.Configuration.GetConnectionString("SqlCon"));
+            
         }
     }
 }

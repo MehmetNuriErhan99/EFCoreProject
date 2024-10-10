@@ -1,8 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
-using UdemyEFCore.DatabaseFirst.DAL;
+﻿// See https://aka.ms/new-console-template for more information
+using Microsoft.EntityFrameworkCore;
+using System;
+using UdemyEFCore.DatabaseFirstByScaffold.Models;
 
-DbContextInitializer.Build();
-using (var _context = new AppDbContext())
+Console.WriteLine("Hello, World!");
+
+using (var _context = new UdemyEfcoeDatebaseFirstDbContext())
 //AppDbContext içerisine DbContextInitializer.OptionsBuilder.Options yazdığımızda birden fazla  db ile baglantı kuracağımızı söyler
 // ikinci bir overloadım olucak veritabanıyla ilgili optionsları belirteceğimiz sınıf belirtecegım 
 {
@@ -12,5 +15,4 @@ using (var _context = new AppDbContext())
     {
         Console.WriteLine($"{p.Id} : {p.Name} : {p.Price} - {p.Price}");
     });
-
-} 
+}

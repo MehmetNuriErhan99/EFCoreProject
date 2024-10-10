@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyEFCore.DatabaseFirst",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyEFCore.DatabaseFirstByScaffold", "UdemyEFCore.DatabaseFirstByScaffold\UdemyEFCore.DatabaseFirstByScaffold.csproj", "{BDB2C592-503C-4DD5-A0EE-38C78134BBF0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyEFCore.CodeFirst", "UdemyEFCore.CodeFirst\UdemyEFCore.CodeFirst.csproj", "{FE6AA7E9-6A97-4485-BEF0-A14B7D752B36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BDB2C592-503C-4DD5-A0EE-38C78134BBF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDB2C592-503C-4DD5-A0EE-38C78134BBF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDB2C592-503C-4DD5-A0EE-38C78134BBF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE6AA7E9-6A97-4485-BEF0-A14B7D752B36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE6AA7E9-6A97-4485-BEF0-A14B7D752B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE6AA7E9-6A97-4485-BEF0-A14B7D752B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE6AA7E9-6A97-4485-BEF0-A14B7D752B36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
